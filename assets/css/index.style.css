@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@200;300&family=Inter:wght@300&family=Noto+Sans+Thai:wght@300&display=swap");
+* {
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Noto Sans Thai", sans-serif;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.bg-black {
+  background-color: #222;
+  color: white;
+}
+
+.form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input,
+button {
+  padding: 8px 12px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.display {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  border-bottom: 1px solid #444;
+  padding: 5px;
+}
+
+.income {
+  color: #2ecc71;
+}
+
+.expense {
+  color: #e74c3c;
+}
+
+#totalBalance {
+  font-size: 1.2em;
+}
+li {
+  margin: 5px 0;
+  border-bottom: 1px solid #444;
+  padding: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+ul li {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+ul li.fade-in {
+  opacity: 1;
+}
+.transaction-label {
+  margin-left: 10px;
+  font-style: italic;
+  color: #aaa;
+}
+
+.bg-black {
+  color: white;
+  background-color: rgb(41, 41, 41);
+}
+.bg-white h1,
+div {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}

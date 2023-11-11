@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>บัญชีรายรับ-รายจ่าย</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.style.css">
+</head>
+<body class="bg-black">
+    <div class="container mt-4 border rounded p-4 bg-white">
+        <h1 class="text-center mb-4">บัญชีรายรับ-รายจ่าย</h1>
+        <div class="form-group">
+            <label for="amount">จำนวนเงิน:</label>
+            <input type="number" class="form-control" id="amount" placeholder="จำนวนเงิน">
+        </div>
+        <div class="form-group">
+            <label for="description">รายละเอียด:</label>
+            <input type="text" class="form-control" id="description" placeholder="อธิบายเกี่ยวกับยอดเงิน">
+        </div>
+        <button class="btn btn-success mr-2" onclick="addTransaction('income')">รายรับ</button>
+        <button class="btn btn-danger mr-2" onclick="addTransaction('expense')">รายจ่าย</button>
+        <button class="btn btn-secondary" onclick="resetTransactions()">Reset</button>
+    </div>
+    <div class="container mt-4 border rounded p-4">
+        <h2>รายการ</h2>
+        <ul id="transactionList" class="list-group"></ul>
+        <p id="totalBalance">ยอดคงเหลือ: 0</p>
+    </div>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
